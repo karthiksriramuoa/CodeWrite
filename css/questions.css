@@ -1,0 +1,10 @@
+#your-question-banner{background-image:url(../images/view-question-bg.jpg); min-height: 350px;}
+#your-question-banner h1{margin-top:130px;font-size: 45px; font-weight: 600;}
+.questions-view{border-radius: 5px;border: solid 1px #b1b1b1;margin: 50px 0 50px 0;}
+#sorting-table thead{background: #0074c1;color: #fff;}
+/*#sorting-table thead tr th{text-align: center;}*/
+#sorting-table tr{height:50px;}
+#sorting-table.table{margin-bottom:0px;}
+#sorting-table .fa-check{color:#2ecc71;}
+#sorting-table .fa-times{color:#e74c3c;}
+.question-pagination{text-align:center;}

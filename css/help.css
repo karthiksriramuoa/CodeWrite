@@ -1,0 +1,9 @@
+#question-search{background-image:url(../images/faq-bg.jpg); min-height: 450px;}
+#question-search .search-box{ margin-top:240px;}
+#question-search .search-box h1{color:#fff;}
+#question-search .search-box .keep-left{float:left;}
+#question-search .search-box .text-field{width:83%; margin-right:2%;}
+#question-search .search-box .submit-field{width:15%; max-width:100px;}
+#faq .faq-title{margin-top:30px;}
+#faq .contact-us-directly{width:100%; text-align:right;}
+#faq .contact-us-directly span{font-size: 20px; font-weight: 600;}
