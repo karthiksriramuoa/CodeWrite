@@ -1,42 +1,36 @@
 ﻿<!DOCTYPE html>
-<html >
+<html>
 <head>
- 
-  <title>University Login Page</title>
-  
-  
-  
-      <link rel="stylesheet" href="css/style.css">
+	<title>University Login Page</title>
+	<link rel="stylesheet" href="css/style.css">
+	<!-- Bootstrap style -->
+	<link rel="stylesheet" href="css/bootstrap.min.CSS"> 
 
-  
 </head>
 
 <body style= "background-image: url(images/abc.jpg);">
   <hgroup>
   <h1 style="color:#252525;">University Login Page</h1>
-</hgroup>
-<form>
-<div class="group">
-         <label style="color:#252525;">Select University</label>
-  </div>
- <div class="group"> 
-		  <p>
-             <select id = "myList">
-               <option value = "1">University Of Auckland</option>
-               <option value = "2">Simon Fraser University</option>
-               <option value = "3">Duke University</option>
-               <option value = "4">University of Herenski</option>
-             </select>
-          </p>
-  </div>
-  <div class="group">
-    <input style="color:#252525;" type="text" name="u" placeholder="Username" required="required" />
-   
-  </div>
-  <div class="group">
-    <input style="color:#252525;" type="password" name="p" placeholder="Password" required="required" />
-  </div>
-  <button style="color:#252525;" type="Submit" class="button buttonBlue" formaction="Codewrite_Courses.html">Login</button>
+  </hgroup>
+<form id="login-form" action="">
+	<div class="group">
+		<label style="color:#252525;">Select University</label>
+	</div>
+	<div class="group">
+		<select id="uni-list" class="form-control" >
+			<option value = "1">University Of Auckland</option>
+			<option value = "2">Simon Fraser University</option>
+			<option value = "3">Duke University</option>
+			<option value = "4">University of Herenski</option>
+		</select>
+	</div>
+	<div class="group">
+		<input style="color:#252525;" type="text" name="u" placeholder="Username" required="required" />
+	</div>
+	<div class="group">
+		<input style="color:#252525;" type="password" name="p" placeholder="Password" required="required" />
+	</div>
+	<button type="Submit" class="button buttonBlue" formaction="Codewrite_Courses.html">Login</button>
 </form>
 
 

@@ -1726,13 +1726,6 @@ input:focus ~ .bar:before, input:focus ~ .bar:after { width: 50%; }
 
 .buttonBlue:hover { background: #357bd8; }
 
-* { box-sizing:border-box; }
-
-body {
- font-family: Helvetica;
- background: #eee;
- -webkit-font-smoothing: antialiased;
-}
 
 hgroup {
  text-align:center;
@@ -1776,3 +1769,9 @@ input:focus { outline: none; }
 
 
 /* Label */
+
+
+/*===== @Run =====*/
+/*--- login ---*/
+#login-form button{color:#ffffff;}
+#uni-list.form-control{height:30px;}

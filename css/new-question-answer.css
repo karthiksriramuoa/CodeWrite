@@ -1,0 +1,219 @@
+#new-question-banner{background-image:url(../images/question-bg.jpg); min-height: 400px;}
+#new-question-banner h1{margin-top:130px;font-size: 45px; font-weight: 600;color:#fff;}
+#new-questions{min-height:1120px;}
+
+/*form styles*/
+#new-question-form {
+	margin: 50px auto;
+    text-align: center;
+    position: relative;
+    border: none;
+    box-shadow: none;
+    width: 100%;
+    background: none;
+}
+#new-question-form fieldset {
+
+	padding: 20px 30px;
+	box-sizing: border-box;
+	width: 80%;
+	margin: 0 10%;
+	
+	/*stacking fieldsets above each other*/
+	position: absolute;
+}
+/*Hide all except first fieldset*/
+#new-question-form fieldset:not(:first-of-type) {
+	display: none;
+}
+/*inputs*/
+#new-question-form input
+{
+	margin-bottom:6px;
+}
+
+#new-question-form input, #new-question-form textarea {
+	padding: 15px;
+	border: 1px solid #ccc;
+	border-radius: 3px;
+	width: 100%;
+	box-sizing: border-box;
+	font-family: montserrat;
+	color: #2C3E50;
+	font-size: 13px;
+}
+/*buttons*/
+#new-question-form .action-button {
+	width: 100px;
+	background: #2d6cdf;
+	font-weight: bold;
+	color: white;
+	border: 0 none;
+	border-radius: 1px;
+	cursor: pointer;
+	padding: 10px 5px;
+	margin: 10px 5px;
+}
+#new-question-form .action-button:hover, #new-question-form .action-button:focus {
+	box-shadow: 0 0 0 2px white, 0 0 0 3px #2d6cdf;
+}
+/*headings*/
+.fs-title {
+	font-size: 15px;
+	text-transform: uppercase;
+	color: #2C3E50;
+	margin-bottom: 10px;
+}
+.fs-subtitle {
+	font-weight: normal;
+	font-size: 13px;
+	color: #666;
+	margin-bottom: 20px;
+}
+/*progressbar*/
+#progressbar {
+	margin-bottom: 30px;
+	overflow: hidden;
+	/*CSS counters to number the steps*/
+	counter-reset: step;
+}
+#progressbar li {
+	list-style-type: none;
+	color: #2C3E50;
+	text-transform: uppercase;
+	font-size: 14px;
+	width: 33.33%;
+	float: left;
+	position: relative;
+}
+#progressbar li:before {
+	content: counter(step);
+	counter-increment: step;
+	width: 20px;
+	line-height: 20px;
+	display: block;
+	font-size: 10px;
+	color: #333;
+	background: white;
+	border-radius: 3px;
+	margin: 0 auto 5px auto;
+}
+/*progressbar connectors*/
+#progressbar li:after {
+	content: '';
+	width: 100%;
+	height: 2px;
+	background: white;
+	position: absolute;
+	left: -50%;
+	top: 9px;
+	z-index: -1; /*put it behind the numbers*/
+}
+#progressbar li:first-child:after {
+	/*connector not needed before the first step*/
+	content: none; 
+}
+/*marking active/completed steps green*/
+/*The number of the step and the connector before it = green*/
+#progressbar li.active:before,  #progressbar li.active:after{
+	background: #2d6cdf;
+	color: white;
+}
+
+#new-question-form .next, .submit{float:right;}
+#new-question-form .previous{float:left;}
+#new-question-form select{float:left; clear:both; margin-bottom: 10px;height: 30px; border-radius: 3px;}
+small.example-des{float:left; margin-left:5px;margin-bottom: 20px;text-align: left;}
+
+#new-question-form .question-input-wrapper{float:left; width:65%}
+#new-question-form .question-arrow{float:left; width:15%}
+#new-question-form .question-arrow img{width:30px; margin-top: 34px;}
+#new-question-form .question-output-wrapper{float:left; width:20%}
+#new-question-form .question-output-wrapper input{margin-top:20px;}
+#new-question-form .test-cases{overflow: hidden;}
+
+
+/*-------------- Answer ------------------*/
+#new-answer-banner{background-image:url(../images/question-bg.jpg); min-height: 400px;}
+#new-answer-banner h1{margin-top:130px;font-size: 45px; font-weight: 600;color:#fff;}
+#new-answers{min-height:1120px;}
+
+/*form styles*/
+#new-answer-form {
+	margin: 50px auto;
+    text-align: center;
+    position: relative;
+    border: none;
+    box-shadow: none;
+    width: 100%;
+    background: none;
+}
+#new-answer-form fieldset {
+
+	padding: 20px 30px;
+	box-sizing: border-box;
+	width: 80%;
+	margin: 0 10%;
+	
+	/*stacking fieldsets above each other*/
+	position: absolute;
+}
+/*Hide all except first fieldset*/
+#new-answer-form fieldset:not(:first-of-type) {
+	display: none;
+}
+/*inputs*/
+#new-answer-form input
+{
+	margin-bottom:6px;
+}
+
+#new-answer-form input, #new-answer-form textarea {
+	padding: 15px;
+	border: 1px solid #ccc;
+	border-radius: 3px;
+	width: 100%;
+	box-sizing: border-box;
+	font-family: montserrat;
+	color: #2C3E50;
+	font-size: 13px;
+}
+/*buttons*/
+#new-answer-form .action-button {
+	width: 100px;
+	background: #2d6cdf;
+	font-weight: bold;
+	color: white;
+	border: 0 none;
+	border-radius: 1px;
+	cursor: pointer;
+	padding: 10px 5px;
+	margin: 10px 5px;
+}
+#new-answer-form .action-button:hover, #new-answer-form .action-button:focus {
+	box-shadow: 0 0 0 2px white, 0 0 0 3px #2d6cdf;
+}
+
+/*progressbar*/
+#new-answer-form #progressbar li {
+	list-style-type: none;
+	color: #2C3E50;
+	text-transform: uppercase;
+	font-size: 14px;
+	width: 50%;
+	float: left;
+	position: relative;
+}
+
+
+#new-answer-form .next, .submit{float:right;}
+#new-answer-form .previous{float:left;}
+#new-answer-form select{float:left; clear:both; margin-bottom: 10px;height: 30px; border-radius: 3px;}
+small.example-des{float:left; margin-left:5px;margin-bottom: 20px;text-align: left;}
+
+#new-answer-form .question-input-wrapper{float:left; width:65%}
+#new-answer-form .question-arrow{float:left; width:15%}
+#new-answer-form .question-arrow img{width:30px; margin-top: 34px;}
+#new-answer-form .question-output-wrapper{float:left; width:20%}
+#new-answer-form .question-output-wrapper input{margin-top:20px;}
+#new-answer-form .test-cases{overflow: hidden;}
