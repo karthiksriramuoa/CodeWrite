@@ -1,4 +1,4 @@
-#new-question-banner{background-image:url(../images/question-bg.jpg); min-height: 400px;}
+#new-question-banner{background-image:url(../images/question-bg.jpg); min-height: 400px; height: 400px;}
 #new-question-banner h1{margin-top:130px;font-size: 45px; font-weight: 600;color:#fff;}
 #new-questions{min-height:1120px;}
 
@@ -18,7 +18,7 @@
 	box-sizing: border-box;
 	width: 80%;
 	margin: 0 10%;
-	
+
 	/*stacking fieldsets above each other*/
 	position: absolute;
 }
@@ -111,7 +111,7 @@
 }
 #progressbar li:first-child:after {
 	/*connector not needed before the first step*/
-	content: none; 
+	content: none;
 }
 /*marking active/completed steps green*/
 /*The number of the step and the connector before it = green*/
@@ -154,7 +154,7 @@ small.example-des{float:left; margin-left:5px;margin-bottom: 20px;text-align: le
 	box-sizing: border-box;
 	width: 80%;
 	margin: 0 10%;
-	
+
 	/*stacking fieldsets above each other*/
 	position: absolute;
 }
@@ -218,3 +218,36 @@ small.example-des{float:left; margin-left:5px;margin-bottom: 20px;text-align: le
 #new-answer-form .question-output-wrapper input{margin-top:20px;}
 #new-answer-form .test-cases{overflow: hidden;}
 
+
+
+.confirm-block
+{
+	width:100%; 
+	height:100%;
+	position:fixed; 
+	background: rgba(121, 121, 121, 0.38);
+	top: 0px;
+	display:none;
+	z-index: 9;
+	}
+.confirm-submit-message, .confirm-question-message
+{
+	text-align: center;
+	width:100%;
+    height: 300px;
+    max-width: 400px;
+    top: 50%;
+    left: 50%;
+    margin: -150px 0 0 -200px;
+    position: absolute;
+    background: #fff;
+    padding: 80px 0;
+    box-shadow: 5px 5px 9px #717171;
+    border: 1px solid #ffffff;
+    border-radius: 5px;
+}
+.confirm-submit-message a, .confirm-question-message a{margin-top: 40px; width: 140px;border-radius: 0px; border-radius:0px;}
+.answer-form-submit{text-align:right;}
+.answer-submit{border-radius:0px;}
+
+.question-form-submit a{border-radius:0px; float:right;}

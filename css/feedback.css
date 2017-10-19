@@ -3,7 +3,9 @@
 #feedback-form form{width:100%;}
 #feedback-form h1{text-align: center; margin-top: 60px;}
 #feedback-form .feedback-form-submit {margin-bottom: 0px; text-align: right;}
+#feedback-form .feedback-form-submit a{border-radius:0px;}
 #feedback-form .feedback-form-submit input{max-width:200px; float:right; clear:both;}
+
 
 .thank-you-block
 {

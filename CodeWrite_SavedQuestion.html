@@ -182,8 +182,8 @@
 						</div>
 
 						<input type="button" name="previous" class="previous action-button" value="Previous" />
-						<input type="submit" name="submit" class="submit action-button" value="Update" onclick="window.location.replace('Codewrite_ViewQuestions.html')"/>
-						<input type="button" name="submit" class="submit action-button" value="Save Draft" onclick="window.location.replace('CodeWrite_CourseHomePage.html')"/>
+						<input type="submit" name="submit" class="submit action-button question-submit" value="Update" />
+						<input type="button" name="submit" class="submit action-button" value="Save Draft" onclick="window.location.replace('CodeWrite_SavedQuestion.html')"/>
 					  </fieldset>
 					</form>
 
@@ -192,6 +192,13 @@
 				</div>
 			</div>
 
+		</div>
+	</div>
+	
+	<div class="confirm-block">
+		<div class="confirm-question-message">
+			<h2>Your question has been updated successfully!</h2>
+			<a href="Codewrite_ViewQuestions.html" class="btn btn-primary">OK</a>
 		</div>
 	</div>
 
@@ -263,10 +270,16 @@
 	<script src="js/simplyCountdown.js"></script>
 	<!-- Main -->
 	<script src="js/main.js"></script>
-
-
-	<!-- Main -->
 	<script src="js/new-question.js"></script>
+	<script>
+		jQuery('.question-submit').click(function(){
+			jQuery('.confirm-block').fadeIn();
+		});
+		
+		jQuery('.confirm-block').click(function(){
+			window.location.href = "Codewrite_ViewQuestions.html";
+		});
+	</script>
 
 	</body>
 </html>

@@ -180,11 +180,11 @@
 							<input type="text" name="test-case-output5" placeholder="Topic" />
 							<small class="example-des">You can create your own topics. Use the comma to separate them (e.g. topic one, topic two).</small>
 						</div>
+							<input type="button" name="previous" class="previous action-button" value="Previous" />
+							<input type="submit" name="submit" class="submit action-button question-submit" value="Submit"/>
+							<input type="button" name="submit" class="submit action-button question-save-draft" value="Save Draft" onclick="window.location.replace('CodeWrite_SavedQuestion.html')"/>
 
-						<input type="button" name="previous" class="previous action-button" value="Previous" />
-						<input type="submit" name="submit" class="submit action-button" value="Submit" onclick="window.location.replace('Codewrite_ViewQuestions.html')"/>
-						<input type="button" name="submit" class="submit action-button" value="Save Draft" onclick="window.location.replace('CodeWrite_CourseHomePage.html')"/>
-					  </fieldset>
+						 </fieldset>
 					</form>
 
 
@@ -194,7 +194,12 @@
 
 		</div>
 	</div>
-
+	<div class="confirm-block">
+		<div class="confirm-question-message">
+			<h2>Your question has been submitted successfully!</h2>
+			<a href="Codewrite_ViewQuestions.html" class="btn btn-primary">OK</a>
+		</div>
+	</div>
 
 	<footer id="fh5co-footer" role="contentinfo" style="background-image: url(images/img_bg_4.jpg);">
 		<div class="overlay"></div>
@@ -263,7 +268,15 @@
 	<script src="js/simplyCountdown.js"></script>
 	<!-- Main -->
 	<script src="js/main.js"></script>
-
+	<script>
+		jQuery('.question-submit').click(function(){
+			jQuery('.confirm-block').fadeIn();
+		});
+		
+		jQuery('.confirm-block').click(function(){
+			window.location.href = "Codewrite_ViewQuestions.html";
+		});
+	</script>
 
 	<!-- Main -->
 	<script src="js/new-question.js"></script>

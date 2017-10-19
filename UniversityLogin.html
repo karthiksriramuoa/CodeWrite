@@ -5,17 +5,14 @@
 	<link rel="stylesheet" href="css/style.css">
 	<!-- Bootstrap style -->
 	<link rel="stylesheet" href="css/bootstrap.min.CSS"> 
-	<style>
-		#login-button{text-decoration: none;}
-		#login-button:hover{color:#ffffff;}
-	</style>
+
 </head>
 
 <body style= "background-image: url(images/abc.jpg);">
-<hgroup>
-	<h1 style="color:#252525;">University Login Page</h1>
-</hgroup>
-<form id="login-form">
+  <hgroup>
+  <h1 style="color:#252525;">University Login Page</h1>
+  </hgroup>
+<form id="login-form" action="">
 	<div class="group">
 		<label style="color:#252525;">Select University</label>
 	</div>
@@ -41,7 +38,7 @@
 <script src="js/jquery-2.2.4.min.js"></script>
 <script>
 jQuery("#login-button").click(function(){
-	if(jQuery("[name='u']").val() == "test" && jQuery("[name='p']").val() == "test")
+	if((jQuery("[name='u']").val() == "test001" && jQuery("[name='p']").val() == "temp53") || (jQuery("[name='u']").val() == "test002" && jQuery("[name='p']").val() == "temp58"))
 	{
 		window.location.href = "Codewrite_Courses.html";
 	}
@@ -51,5 +48,7 @@ jQuery("#login-button").click(function(){
 	}
 });
 </script>
+
+
 </body>
 </html>
